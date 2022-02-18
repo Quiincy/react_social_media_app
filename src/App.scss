@@ -1,0 +1,80 @@
+.app-wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "h h "
+    "n c ";
+
+  grid-template-rows: 90px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+
+
+}
+
+
+.header {
+  background: rgba(255, 248, 248, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  grid-area: h;
+
+  img {
+    margin-top: 10px;
+    width: 70px;
+  }
+
+}
+
+.nav {
+  grid-area: n;
+  background: rgba(255, 248, 248, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.profile {
+  grid-area: c;
+  background: rgba(255, 248, 248, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  img {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 10px;
+
+  }
+}
+
+.header div.subitems {
+  display: grid;
+  grid-template-columns: 80px 142px;
+
+  p {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #828396;
+    color: black;
+    margin-top: 25px;
+    font-weight: 800;
+    font-size: 24px;
+  }
+
+
+}
